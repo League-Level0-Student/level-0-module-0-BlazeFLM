@@ -16,10 +16,12 @@ void setup() {
   
 // 2. The code below loads your face picture into the program. 
 //     Make sure the file name is correct for the face image you saved earlier
-face = loadImage("face.jpg");
-  
-// 3. Set the size of the sketch. Make it big enough to show the face you chose.
+face = loadImage("cartoon-face-clip-art-emoji-face.jpg");
+  size(500,500);
+  face.resize(500,500);
 
+// 3. Set the size of the sketch. Make it big enough to show the face you chose.
+  background(face);
 // 4. Resize the face so it is the same size as the sketch
 
 // 5. Drag and drop an image with a mustache onto this sketch. 
@@ -30,14 +32,16 @@ mustache = loadImage("mustache.png");
   }
 
 void draw() {
-  
+  background(face);
 // 6. DRAW FACE.    Use the background() command to make the face the background of the sketch
 //    Run the program to see if the face is drawn. Get this working before you go on.
   
 
 // 7. DRAW MUSTACHE. Use the image() command to draw the mustache.  
 //                  The image command looks like this:
-image (mustache, 200,200);
+mustache.resize(200,50);
+image (mustache, mouseX,mouseY);
+
 //    The numbers specify where to draw the mustache. They represent the top left corner of the image
 //    Run the program to see if the mustache is drawn on the face. Get this working before you go on.
 //    If you need to resize the mustache, do it in the setup() method after you loaded the mustache image.
