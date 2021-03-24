@@ -17,7 +17,18 @@ public class RobotSquare {
 
         // PEN.  Put the robot's pen down so it can draw, Use this command:
 		 /**     rob.penDown();    **/
-
+    	
+    	rob.setSpeed((100));
+    	rob.penDown();
+    int count = 0;
+    rob.move(100);
+    rob.turn(90);
+    while (count < 4) {
+    	rob.move(100);
+    	rob.turn(90);
+    	count++;
+    }
+    	
         // SPEED. Make the robot move quickly. Use this command:
 		  /**     rob.setSpeed();    **/
  
