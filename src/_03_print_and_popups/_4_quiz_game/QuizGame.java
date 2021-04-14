@@ -1,4 +1,4 @@
-package _03_print_and_popups._4_quiz_game;
+ package _03_print_and_popups._4_quiz_game;
 
 import javax.swing.JOptionPane;
 
@@ -24,6 +24,22 @@ public class QuizGame {
 				JOptionPane.showMessageDialog(null, "WRONG");
 				score--;
 			}
+		input = JOptionPane.showInputDialog("What is 4 plus 4?");
+			if (input .equals ("8")) {
+				JOptionPane.showMessageDialog(null, "Correct");
+				score++;
+			} else {
+				JOptionPane.showMessageDialog(null, "WRONG");
+				score--; 
+			}
+		input = JOptionPane.showInputDialog("What is 8+8");
+		if(input .equals("16")) {
+			JOptionPane.showMessageDialog(null, "Correct");
+			score++;
+		} else {
+			JOptionPane.showMessageDialog(null, "WRONG");
+			score--;
+		}
 			 JOptionPane.showMessageDialog(null,"Your score is :"+score);
 	}
 				// 3.  Use an if statement to check if their answer is correct
