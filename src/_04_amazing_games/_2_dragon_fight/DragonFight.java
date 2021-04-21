@@ -1,4 +1,4 @@
-package _04_amazing_games._2_dragon_fight;
+ 	package _04_amazing_games._2_dragon_fight;
 
 import java.util.Random;
 import javax.swing.JOptionPane;
@@ -14,7 +14,7 @@ public class DragonFight {
 		JOptionPane.showMessageDialog(null, "Defeat the dragon to take its treasure!", "Dragon Fighter", 0, dragon);
 
 		// 1. Create some variables to hold health levels
-		
+		int playerHealth = 0;
 			// playerHealth to store your health - set it equal to 100
 	
 			// dragonHealth to store the dragon's health - set it equal to 100
